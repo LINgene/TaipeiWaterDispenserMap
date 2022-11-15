@@ -1,28 +1,12 @@
-# my-app-name
+# 台北市公共飲水機地圖
 
-## Project setup
-```
-npm install
-```
+## 系統介紹
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+本專案使用Vue Cli開發，實作出簡易的資料搜尋並以清單及地圖方式呈現，資料來源為政府開放資料平台所提供之「臺北市公共場所飲水機資訊」資料。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 系統架構
+為方便系統維護及沿用性，所以將搜尋區塊單獨拆分出來做成一個Component，並且在使用者點擊搜尋按鈕後進行資料篩選再將篩選完成的資料回傳給父元件。因此若之後想增加搜尋條件只需修改單一介面及方法即可。
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 資料存取
+因資料來源為固定的JSON Array，所以在系統載入時就先將資料下載並儲存於Vuex Store內供系統使用。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# TaipeiWaterDispenserMap
-# TaipeiWaterDispenserMap
-# TaipeiWaterDispenserMap
-# -TaipeiWaterDispenserMap
